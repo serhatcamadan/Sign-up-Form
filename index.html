@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up — Join Us</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="image-wrapper">
+                <img src="Images/image.jpg" alt="Welcome" class="hero-image">
+                <div class="overlay"></div>
+                <div class="left-content">
+                    <h1>Learn to code by watching others</h1>
+                    <p>See how experienced developers solve problems in real-time. Understanding how developers think is invaluable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="form-wrapper">
+                <h2>Create your account</h2>
+                <p class="form-subtitle">Fill in the details below to get started</p>
+                <form id="signup-form" action="#" method="post" novalidate>
+                    <div class="row">
+                        <div class="field-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            <span class="error-msg" aria-live="polite"></span>
+                        </div>
+                        <div class="field-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            <span class="error-msg" aria-live="polite"></span>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 234 567 8900">
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="field-group">
+                        <label for="country">Country</label>
+                        <select name="country" id="country">
+                            <option value="">Select country</option>
+                            <option value="United States">United States</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="field-group password-group">
+                        <label for="password">Password</label>
+                        <div class="password-input-wrap">
+                            <input type="password" id="password" name="password" placeholder="Min. 8 characters" required minlength="8">
+                            <button type="button" class="toggle-password" aria-label="Show password" title="Show password">
+                                <span class="icon-eye">👁</span>
+                                <span class="icon-eye-off" aria-hidden="true">🙈</span>
+                            </button>
+                        </div>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="field-group password-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-input-wrap">
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat password" required>
+                            <button type="button" class="toggle-password" aria-label="Show password" title="Show password">
+                                <span class="icon-eye">👁</span>
+                                <span class="icon-eye-off" aria-hidden="true">🙈</span>
+                            </button>
+                        </div>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="field-group gender-group">
+                        <span class="label">Gender</span>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Male">
+                                <span>Male</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Female">
+                                <span>Female</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="gender" value="Other">
+                                <span>Other</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="field-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span>I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                        <span class="error-msg" aria-live="polite"></span>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit" class="btn btn-submit">Create Account</button>
+                        <button type="reset" class="btn btn-reset">Clear</button>
+                    </div>
+                </form>
+                <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
